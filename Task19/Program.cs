@@ -1,4 +1,7 @@
-﻿int fiveDigitNumb = ReadInt("пятизначное число");
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, 
+//является ли оно палиндромом.
+
+int fiveDigitNumb = ReadInt("пятизначное число");
 
 int ReadInt(string argument)
 {
@@ -7,7 +10,7 @@ int ReadInt(string argument)
 
 	while (!int.TryParse(Console.ReadLine(), out number))
 	{
-		Console.WriteLine("Ошибка ввода, пожалуйста, введите корректное значение");
+		Console.WriteLine("Ошибка ввода, пожалуйста, введите число");
 	}
 
 	return number;
@@ -24,5 +27,5 @@ if (fiveDigitNumb > 9999 && fiveDigitNumb < 100000)
 }
 else
 {
-    Console.WriteLine("Ошибка ввода, пожалуйста, введите корректное значение");
+    Console.WriteLine("Ошибка ввода, пожалуйста, введите пятизначное число");
 }
